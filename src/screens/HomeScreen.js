@@ -1,8 +1,19 @@
 import React from "react";
-import { Text, StyleSheet } from "react-native";
+import { Text, StyleSheet, View, Button, TouchableOpacity, Touchable} from "react-native";
+//import ComponentScreen from './ComponentsScreen';
 
-const HomeScreen = () => {
-  return <Text style={styles.text}>HomeScreen</Text>;
+const HomeScreen = props1 => {
+  return(
+  <View>
+      <Text style={styles.text}>HomeScreen</Text>
+      <Button
+      onPress={()=> props1.navigation.navigate('Components')} 
+      title="To-do"/>
+      <TouchableOpacity onPress={()=> props1.navigation.navigate('Images')}>
+        <Text>This is the second button</Text>
+      </TouchableOpacity>
+  </View>)
+  
 };
 
 const styles = StyleSheet.create({
@@ -12,3 +23,4 @@ const styles = StyleSheet.create({
 });
 
 export default HomeScreen;
+
