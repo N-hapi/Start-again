@@ -9,11 +9,16 @@ const HomeScreen = props1 => {
       <Button
       onPress={()=> props1.navigation.navigate('Components')} 
       title="To-do"/>
+
       <TouchableOpacity onPress={()=> props1.navigation.navigate('Images')}>
         <Text>This is the second button</Text>
       </TouchableOpacity>
+
+      <Button
+      onPress={()=> props1.navigation.navigate('Image')} 
+      title="Image Screen"/>
   </View>)
-  
+
 };
 
 const styles = StyleSheet.create({

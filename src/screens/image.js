@@ -3,10 +3,14 @@ import { Text, StyleSheet, View, Button, TouchableOpacity, Touchable} from "reac
 
 
 const image = () => {
+    return(
+    <View>
     <Button 
         title="images"
+        
     />
-
+    
+    </View>)
 };
 
 const styles = StyleSheet.create({
