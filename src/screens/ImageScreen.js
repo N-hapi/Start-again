@@ -16,18 +16,21 @@ const ImageScreen = () => {
       <ImageDetail
         title="here is the extra information"
         imageSource={require('../../assets/beach.jpg')}
+        score= "5"
       />
       <ImageDetail
         title="more information"
         imageSource={require('../../assets/beach.jpg')}
+        score= "2"
       />
+      
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   textStyle: {
-    fontSize: 30,
+    //fontSize: 30,
   },
 });
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { Text, StyleSheet, View, Button, TouchableOpacity, Touchable} from "react-native";
-//import ComponentScreen from './ComponentsScreen';
+import ComponentScreen from './ComponentsScreen';
+
 
 const HomeScreen = props1 => {
   return(
@@ -17,6 +18,15 @@ const HomeScreen = props1 => {
       <Button
       onPress={()=> props1.navigation.navigate('Image')} 
       title="Image Screen"/>
+
+      <Button
+      onPress={()=> props1.navigation.navigate('Counter')} 
+      title="Counter"/>
+
+      <Button
+      onPress={()=> props1.navigation.navigate('Color')} 
+      title="Color screen"/>
+
   </View>)
 
 };
