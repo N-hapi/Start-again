@@ -1,4 +1,4 @@
-import { setStatusBarBackgroundColor } from "expo-status-bar";
+
 import React, {useState} from "react";
 import {
     Text,
@@ -9,8 +9,7 @@ import {
     TouchableOpacity,
     Touchable
   } from "react-native";
-import { State } from "react-native-gesture-handler";
-//import { color } from "react-native-reanimated";
+
   const ColorScreen = () =>{
       const[colors, setColor] = useState([]);
 
